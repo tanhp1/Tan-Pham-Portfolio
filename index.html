@@ -159,7 +159,7 @@
       position: relative;
       background: linear-gradient(135deg, var(--purple-dark), var(--purple));
     }
-    .profile-photo { width: 100%; height: 100%; object-fit: cover; }
+    .profile-photo { width: 100%; height: 100%; object-fit: cover; pointer-events: none; user-select: none; -webkit-user-drag: none; }
     .avatar-fallback {
       width: 100%; height: 100%;
       display: flex; align-items: center; justify-content: center;
@@ -752,7 +752,7 @@
 
     <div class="header-identity">
       <div class="photo-wrapper" onclick="document.getElementById('photo-input').click()" title="Click to upload your photo">
-        <img class="profile-photo" id="profile-photo" src="prof-photo.jpg" alt="Tan Hoang Pham" style="display:block;" />
+        <img class="profile-photo" id="profile-photo" src="prof-photo.jpg" alt="Tan Hoang Pham" style="display:block;" oncontextmenu="return false;" draggable="false" />
         <div class="avatar-fallback" id="avatar-fallback">THP</div>
         <div class="photo-upload-overlay">
           <span>📷</span>
