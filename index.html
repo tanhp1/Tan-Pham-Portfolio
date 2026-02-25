@@ -719,6 +719,18 @@
       .header-edu-col { width: 100%; }
       .capstone-grid { grid-template-columns: 1fr; }
     }
+
+  /* Hide editing UI for visitors */
+  .remove-card-btn,
+  .remove-capstone-btn,
+  .remove-thought-btn,
+  .add-btn,
+  .capstone-add-btn,
+  .mindset-add-btn,
+  .photo-upload-overlay,
+  .pptx-preview-area { display: none !important; }
+  [contenteditable] { cursor: default; outline: none; }
+  [contenteditable]:focus { outline: none; }
   </style>
 </head>
 <body>
@@ -740,7 +752,7 @@
 
     <div class="header-identity">
       <div class="photo-wrapper" onclick="document.getElementById('photo-input').click()" title="Click to upload your photo">
-        <img class="profile-photo" id="profile-photo" src="photo.jpeg" alt="Tan Hoang Pham" style="display:block;" />
+        <img class="profile-photo" id="profile-photo" src="prof-photo.jpg" alt="Tan Hoang Pham" style="display:block;" />
         <div class="avatar-fallback" id="avatar-fallback">THP</div>
         <div class="photo-upload-overlay">
           <span>📷</span>
@@ -777,7 +789,7 @@
       <div class="header-contact-box">
         <div class="header-edu-label">Contact</div>
         <div class="header-contact-items">
-          <div class="header-contact-item"><span>✉️</span><span><span class="email-reveal"></span></span></div>
+          <div class="header-contact-item"><span>✉️</span><span><script>document.write('Tanhp1' + '@' + 'uci.edu')</script></span></div>
           <div class="header-contact-item"><span>📞</span><span>(408) 646-2469</span></div>
           <div class="header-contact-item"><span>🔗</span><a href="https://www.linkedin.com/in/tanhoangpham/" target="_blank" style="color:rgba(255,255,255,.85); text-decoration:none;">linkedin.com/in/tanhoangpham</a></div>
           <div class="header-contact-item" style="margin-top:8px;">
@@ -1160,7 +1172,7 @@
   <div class="footer">
     <p>
       <a href="https://www.linkedin.com/in/tanhoangpham/" target="_blank">LinkedIn</a> &nbsp;·&nbsp;
-      <span class="email-reveal"></span> &nbsp;·&nbsp;
+      <script>document.write('Tanhp1' + '@' + 'uci.edu')</script> &nbsp;·&nbsp;
       <span style="font-size:13px; color:rgba(255,255,255,.7);">📞 (408) 646-2469</span>
     </p>
     <p style="margin-top:6px; font-size:11px; color:rgba(255,255,255,.4);">Tan Hoang Pham · UCI Paul Merage MBA '27</p>
