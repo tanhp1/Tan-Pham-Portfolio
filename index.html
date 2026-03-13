@@ -731,6 +731,12 @@
   .pptx-preview-area { display: none !important; }
   [contenteditable] { cursor: default; outline: none; }
   [contenteditable]:focus { outline: none; }
+  * { -webkit-user-modify: read-only !important; }
+  [contenteditable], [contenteditable="true"] { 
+    pointer-events: none !important; 
+    cursor: default !important;
+    -webkit-user-modify: read-only !important;
+  }
   </style>
 </head>
 <body>
@@ -1059,6 +1065,25 @@
           </div>
         </div>
 
+        <div class="capstone-card">
+          <button class="remove-capstone-btn" onclick="this.closest('.capstone-card').remove()">✕</button>
+          <div class="capstone-card-top">
+            <h4>Digital Transformation at BMO</h4>
+            <span class="capstone-badge capstone">Capstone</span>
+          </div>
+          <div class="capstone-meta">UCI Paul Merage School of Business · 2026</div>
+          <p>An in-depth analysis of BMO's digital transformation strategy — examining how a multinational bank navigates legacy systems, customer experience modernization, and operational change management in an evolving financial landscape.</p>
+          <div class="capstone-footer">
+            <span class="capstone-tag">Digital Transformation</span>
+            <span class="capstone-tag">Banking</span>
+            <span class="capstone-tag">Strategy</span>
+          </div>
+          <div class="capstone-links">
+            <a class="capstone-link-btn report" href="https://drive.google.com/file/d/1NNzov3zym-Pg8i_l29JkSqfssmPh7y6A/view?usp=drive_link" target="_blank">📄 Written Report</a>
+            <a class="capstone-link-btn slides" href="https://drive.google.com/file/d/1KVuDgWXS8_ug8fXwFWXwDO2orYe6Ohfc/view?usp=drive_link" target="_blank">📊 Presentation</a>
+          </div>
+        </div>
+
         <div class="capstone-card capstone-coming-soon">
           <div class="capstone-card-top">
             <h4>INNOVATEChina 2026 Case Competition</h4>
@@ -1068,13 +1093,22 @@
           <div class="coming-soon-banner">In progress — check back after the competition</div>
         </div>
 
-        <div class="capstone-card capstone-coming-soon">
+        <div class="capstone-card">
+          <button class="remove-capstone-btn" onclick="this.closest('.capstone-card').remove()">✕</button>
           <div class="capstone-card-top">
             <h4>SEGA Case Competition</h4>
-            <span class="capstone-badge coming-soon">🔜 Coming Soon</span>
+            <span class="capstone-badge competition">Competition</span>
           </div>
           <div class="capstone-meta">2026</div>
-          <div class="coming-soon-banner">In progress — check back after the competition</div>
+          <p>Developed a strategic pitch for SEGA, analyzing market positioning, competitive landscape, and growth opportunities within the gaming industry.</p>
+          <div class="capstone-footer">
+            <span class="capstone-tag">Case Competition</span>
+            <span class="capstone-tag">Gaming Industry</span>
+            <span class="capstone-tag">Strategy</span>
+          </div>
+          <div class="capstone-links">
+            <a class="capstone-link-btn slides" href="https://drive.google.com/file/d/1_NdaqA1_9tC8XUF3lpZ73uWCCl2scEpR/view?usp=drive_link" target="_blank">📊 Presentation</a>
+          </div>
         </div>
 
         <div class="capstone-card capstone-coming-soon">
